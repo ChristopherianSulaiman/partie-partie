@@ -1,0 +1,444 @@
+/* .panel-container {
+  width: 316px;
+  height: 496px;
+}
+
+.purple-layer {
+  width: 100%;
+  height: 14%;
+  background-color: rgb(78, 46, 153);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-top: -20px; /* Adjust this value to raise or lower the text */
+/*}*/
+
+.panel-container {
+  width: 316px;
+  height: 496px;
+  background-color: rgb(35, 28, 58);
+}
+
+.purple-layer {
+  width: 100%;
+  height: 15%;
+  background-color: rgb(76, 68, 118);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-top: -2px;
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  top: -37px;
+  right: -105px;
+}
+
+.tooltip-icon {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: purple;
+  margin-right: 5px;
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  background-color: rgb(245, 245, 245);
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 14px;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  bottom: 5px;
+}
+
+.tooltip.visible {
+  visibility: visible;
+}
+
+.gear-image {
+  display: flex;
+  align-items: center;
+  width: 27px;
+  height: 27px;
+}
+
+.setting {
+  background: none;
+  border: none;
+  padding: 0;
+
+  position: absolute;
+  top: 7px;
+  left: 280px;
+}
+
+.logo {
+  position: absolute;
+  left: 57px;
+  top: 2px;
+}
+
+.logo-image {
+  height: 40px;
+  width: 40px;
+  left: -100px;
+  top: 10px;
+}
+
+.submessage {
+  text-align: center;
+  position: absolute;
+  bottom: 870px;
+  font-weight: bold;
+  font-size: smaller;
+  top: 29px;
+  color: aliceblue;
+  font-style: italic;
+}
+.green-text {
+  color: rgb(131, 241, 175);
+}
+
+.white-text {
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 1.5%;
+}
+
+.Qbutton-container,
+.Gbutton-container {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 7px;
+  width: 100%;
+  height: 36px;
+  background-color: rgb(76, 68, 118);
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Pbutton-container {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 7px;
+  width: 100%;
+  height: 36px;
+  background-color: rgb(110, 74, 255);
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Qtext,
+.Ptext,
+.Gtext {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.tooltip-container:hover {
+  background-color: bisque;
+}
+
+.setting:hover {
+  background-color: antiquewhite;
+}
+
+.copas:hover {
+  background-color: antiquewhite;
+}
+
+.tdots:hover {
+  background-color: antiquewhite;
+}
+
+.Qbutton-container:hover {
+  background-color: rgb(110, 74, 255); /* Change to the desired hover color */
+}
+
+.Pbutton-container:hover {
+  background-color: rgb(110, 74, 255); /* Change to the desired hover color */
+}
+
+.Gbutton-container:hover {
+  background-color: rgb(110, 74, 255); /* Change to the desired hover color */
+}
+
+.line-segment {
+  position: absolute;
+  height: 2px;
+  background-color: rgb(76, 68, 118);
+  width: 100%;
+  margin: 0 auto;
+  bottom: -11px;
+}
+
+.botContainer {
+  position: absolute;
+  height: 18px;
+  background-color: rgb(76, 68, 118);
+  width: 100%;
+  margin: 0 auto;
+  bottom: -364px;
+}
+
+.bottom {
+  position: absolute;
+  color: rgb(131, 241, 175);
+  font-size: xx-small;
+  bottom: -5px;
+  right: 100px;
+}
+.copaspos {
+  position: absolute;
+  top: -13px;
+  right: 14px;
+}
+.copas {
+  background: none;
+  border: none;
+  padding: 0;
+  transform: scale(0.35);
+  /* position: absolute;
+  width: 5px;
+  height: 5px; */
+  /* bottom: 5px;
+  right: 5px; */
+}
+
+.tdots {
+  background: none;
+  border: none;
+  padding: 0;
+  position: absolute;
+  transform: scale(0.26);
+  right: -20px;
+  top: -0.7px;
+}
+
+.purple-layer-two {
+  position: absolute;
+  background-color: rgb(110, 74, 255);
+  height: 300px;
+  width: 268px;
+  border-radius: 8px;
+  right: 26px;
+  bottom: -325px;
+}
+
+.plogo {
+  position: absolute;
+  transform: scale(0.19);
+  bottom: 150px;
+  left: -83px;
+}
+
+.placeholder {
+  color: white;
+  position: absolute;
+  font-weight: bold;
+  font-size: small;
+  letter-spacing: 0.66px;
+  right: 125px;
+  top: 7px;
+}
+.translucent-now {
+  color: silver;
+  position: absolute;
+  opacity: 0.65;
+  font-size: 11.5px;
+  letter-spacing: 0.66px;
+  right: 177.5px;
+  bottom: 234px;
+}
+
+.triangle {
+  position: absolute;
+  transform: scale(0.5);
+  right: 98px;
+  top: 8px;
+}
+
+.plogo-two {
+  position: absolute;
+  transform: scale(0.23);
+  top: -15px;
+  right: 46px;
+}
+
+.game-name {
+  position: absolute;
+  color: white;
+  bottom: 250px;
+  right: 20px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  font-weight: 450;
+}
+
+.mc-world {
+  color: white;
+  position: absolute;
+  font-weight: 650;
+  bottom: 180px;
+  right: 108px;
+  letter-spacing: 0.2px;
+  font-size: 18px;
+}
+
+.expansion {
+  color: white;
+  position: absolute;
+  font-weight: 650;
+  bottom: 150px;
+  right: 154px;
+  letter-spacing: 0.25px;
+  font-size: 18px;
+}
+
+.subtext-one {
+  position: absolute;
+  color: white;
+  top: 130px;
+  right: 70px;
+  font-size: smaller;
+  letter-spacing: 0.3px;
+}
+.subtext-two {
+  position: absolute;
+  color: white;
+  top: 153px;
+  right: 85px;
+  font-size: smaller;
+  letter-spacing: 0.25px;
+}
+
+.expert-img {
+  position: absolute;
+  transform: scale(0.5);
+  bottom: 55px;
+  right: 225px;
+}
+
+.expert-msg {
+  position: absolute;
+  color: rgb(217, 185, 24);
+  bottom: 53.5px;
+  right: 197px;
+  font-size: 12px;
+}
+
+.bottomm {
+  position: absolute;
+  color: white;
+  bottom: 53.5px;
+  right: 145px;
+  font-size: 12px;
+}
+
+.maxp {
+  position: absolute;
+  color: white;
+  bottom: 53.5px;
+  right: 70px;
+  font-size: 12px;
+}
+
+.smallcirc {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(235, 235, 245);
+  transform: scale(0.08);
+  bottom: 47px;
+  right: 165.5px;
+}
+
+.smallcirc-two {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(235, 235, 245);
+  transform: scale(0.08);
+  bottom: 47px;
+  right: 112px;
+}
+
+.maxPlayers {
+  position: absolute;
+  color: white;
+  bottom: 53.5px;
+  right: 60px;
+  font-size: 12px;
+}
+
+.screenmirr {
+  position: absolute;
+  transform: scale(0.65);
+  bottom: 10px;
+}
+
+.join-partie-container {
+  position: absolute;
+  background-color: white;
+  height: 36px;
+  width: 93px;
+  border-radius: 7px;
+  justify-content: center;
+  bottom: 20px;
+  right: 18px;
+}
+
+.join-partie {
+  position: absolute;
+  color: rgb(110, 74, 255);
+  top: -10px;
+  right: 6.5px;
+  font-weight: bold;
+}
